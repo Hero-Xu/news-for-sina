@@ -1,0 +1,118 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 12px;
+	height: 100%;
+}
+body{
+	font-family: PingFang;
+	height: 100%;
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+ul{
+	list-style: none;
+}
+.container{
+	padding: 0 15px;
+}
+/*header开始*/
+#header{
+	width: 100%;
+	height: 80px;
+	background: #f6f6f6;
+	position: fixed;
+	z-index: 999;
+}
+#header ul{
+	/*overflow用于清除浮动的影响*/
+	overflow: hidden;
+	/*display: -webkit-box;*/
+	height: 40px;
+	line-height: 40px;
+}
+#header li{
+	font-size: 1.5rem;
+	color: #1a1a1a;
+	width: 20%;
+	float: left;
+	/*-webkit-box-flex: 1;*/
+}
+/*header结束*/
+
+/*content开始*/
+#content{
+	padding-top: 90px;
+	-webkit-box-flex: 1;
+}
+#content li{
+	padding: 20px 0;
+	position: relative;
+	border-bottom: 1px solid #ececec;
+	display: -webkit-box;
+	overflow: hidden;
+}
+#content li .img{
+	width: 30%;
+}
+#content li .img img{
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+#content li .info{
+	margin-left: 15px;
+	position: relative;
+	-webkit-box-flex: 1;
+}
+
+#content li h1{
+	font-size: 1.5rem;
+	color: #1a1a1a;
+	margin-bottom: 10px;
+}
+#content li p{
+	font-size: 1rem;
+	color: #888888;
+	line-height: 150%;
+}
+#content li .comment{
+	position: absolute;
+	right: 0;
+	bottom: -5px;
+}
+#content li .comment img{
+	float: right;
+	margin-left: 12px;
+}
+#content li .comment span{
+	color: #8b8b8b;
+	line-height: 22px;
+}
+/*content结束*/
+/*more开始*/
+#loading{
+	width: 100%;
+	position: fixed;
+	top: 80px;
+	bottom: 0;
+	background: #fff url(../images/loading.gif) no-repeat 50% 50%;
+	display: none;
+}
+#more{
+	background: #e8e8e8;
+	width: 100%;
+	height: 50px;
+	color: #888888;
+	text-align: center;
+	line-height: 50px;
+	font-size: 1rem;
+	position: fixed;
+	bottom: 0;
+	z-index: 998;
+}
+/*more结束*/
+
+
